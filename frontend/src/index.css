@@ -11,3 +11,103 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/*---------------------HEADER PARA TDS LAS PGS-----------------------*/
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #fff;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.search-bar input {
+  padding: 5px;
+  margin-right: 5px;
+}
+
+.nav-bar a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.user-icons a {
+  margin-left: 15px;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .search-bar, .nav-bar, .user-icons {
+    width: 100%;
+    margin: 5px 0;
+  }
+  .nav-bar, .user-icons {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+/*---------------------FOOTER PARA TDS LAS PGS-----------------------*/
+
+.footer {
+  background: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: left;
+}
+
+.footer-sections {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 10px;
+}
+
+.footer-section h4 {
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li a {
+  color: #bbb;
+  text-decoration: none;
+}
+
+.social-icons a {
+  color: #fff;
+  margin-right: 10px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+  .footer-sections {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-section {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+  }
+}
