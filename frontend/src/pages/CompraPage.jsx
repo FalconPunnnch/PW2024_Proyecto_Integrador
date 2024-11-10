@@ -11,8 +11,8 @@ const CompraPage = () => {
         {id: 1, nombre: "Tarjeta de credito/debito"},
         {id: 2, nombre: "Paypal"}
     ]
-
     return<>
+
     <Header />
     <div>
         <h1> DATOS DEL COMPRADOR</h1>
@@ -82,7 +82,6 @@ const CompraPage = () => {
         </form>
                 
     </div>
-    
     <Footer />
     </>
 }

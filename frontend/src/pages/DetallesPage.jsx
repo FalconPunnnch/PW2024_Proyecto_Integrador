@@ -28,7 +28,7 @@ const DetallesPage = () => {
                     </button>
                 </div>
             </div>
-            );
-        };
+            )
+        }
 
 export default DetallesPage

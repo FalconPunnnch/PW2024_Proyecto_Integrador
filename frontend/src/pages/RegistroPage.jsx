@@ -21,9 +21,9 @@ const RegistroPage = () => {
             autorizaDatos: autorizaDatos,
         };
 
-        sessionStorage.setItem("USUARIO", JSON.stringify(usuario));
-        setError(""); // Limpiar error en caso de éxito
-    };
+        sessionStorage.setItem("USUARIO", JSON.stringify(usuario))
+        setError("") // Limpiar error en caso de éxito
+    }
 
     return (
         <>

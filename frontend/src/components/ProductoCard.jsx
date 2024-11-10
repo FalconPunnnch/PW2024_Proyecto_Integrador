@@ -1,18 +1,18 @@
-import React, { useState } from 'react';
-import { Card, Button, Form } from 'react-bootstrap'; // Añadimos Form para el input de cantidad
+import React, { useState } from 'react'
+import { Card, Button, Form } from 'react-bootstrap' //Form para el input de cantidad
 
 const ProductoCard = ({ imagenUrl, nombre, precio }) => {
-  const [cantidad, setCantidad] = useState(1); // 1 es la cantidad inicial de productos al agregaro al carrito
-  const [añadidoAlCarrito, setAñadidoAlCarrito] = useState(false);
+  const [cantidad, setCantidad] = useState(1) // 1 es la cantidad inicial de productos al agregaro al carrito
+  const [añadidoAlCarrito, setAñadidoAlCarrito] = useState(false)
 
   // Función para manejar el cambio en el input de cantidad
   const handleCantidadChange = (event) => {
-    setCantidad(Math.max(1, event.target.value)); // No permitir cantidades menores a 1
-  };
+    setCantidad(Math.max(1, event.target.value)) //No permitir cantidades menores a 1
+  }
 
   const handleAgregarAlCarrito = () => {
-    setAñadidoAlCarrito(true);
-  };
+    setAñadidoAlCarrito(true)
+  }
 
   return (
     <Card className="producto-card" style={{ width: '18rem' }}>
@@ -44,7 +44,7 @@ const ProductoCard = ({ imagenUrl, nombre, precio }) => {
         </Button>
       </Card.Body>
     </Card>
-  );
-};
+  )
+}
 
-export default ProductoCard;
+export default ProductoCard
