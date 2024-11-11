@@ -1,6 +1,7 @@
 # Kingtana: un sitio web de comercio electrónico funcional.
 ## Proyecto Integrador grupal para el curso de Programación Web de la Universidad de Lima.
 ### Profesor: Hernan Alejandro Quintana Cruz.
+### Integrantes: José Luis Velis, Alejandra Falcon, Joaquín Aquije y Renzo Vasquez.
 
 ### Funcionalidades principales implementadas:
 
