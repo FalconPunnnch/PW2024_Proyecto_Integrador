@@ -1,7 +1,5 @@
 import { Carousel } from "react-bootstrap"
 import { Link } from "react-router-dom"
-import Header from "./Header"
-import Footer from "./Footer"
 
 const MainPage = () => {
     const ofertas = [
@@ -12,7 +10,6 @@ const MainPage = () => {
 
     return (
         <>
-            <Header />
             <Carousel>
                 {ofertas.map((oferta) => (
                     <Carousel.Item key={oferta.id}>
@@ -26,7 +23,6 @@ const MainPage = () => {
                     </Carousel.Item>
                 ))}
             </Carousel>
-            <Footer />
         </>
     )
 }

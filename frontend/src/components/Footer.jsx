@@ -21,13 +21,13 @@ const Footer = () => {
             <div className="footer-section">
               <h4>Conéctate</h4>
               <div className="social-icons">
-                <a href="https://facebook.com" aria-label="Facebook">F</a>
-                <a href="https://instagram.com" aria-label="Instagram">I</a>
+                <a href="https://facebook.com" aria-label="Facebook">Facebook</a>
+                <a href="https://instagram.com" aria-label="Instagram">Instagram</a>
               </div>
             </div>
           </div>
           <div className="footer-bottom">
-            <p>© {new Date().getFullYear()} Wong.pe. Todos los derechos reservados.</p>
+            <p>© {new Date().getFullYear()} Kingtana.pe. Todos los derechos reservados.</p>
           </div>
         </footer>
       )

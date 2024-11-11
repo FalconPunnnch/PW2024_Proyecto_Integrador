@@ -19,7 +19,7 @@ const FlipCard = ({ imagen, titulo, descripcion, precio, infoExtra }) => {
                         <Link to="/ProductoPage">{titulo}</Link>
                     </h3>
                     <p className="card-description">{descripcion}</p>
-                    <div className="card-price">${precio}</div>
+                    <div className="card-price">S/. {precio}</div>
                 </div>
                 {/* Parte de atrás */}
                 <div className="flip-card-back" onClick={handleFlip}>

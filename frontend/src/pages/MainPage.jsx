@@ -16,7 +16,7 @@ const MainPage = () => {
             imagen: "/images/product2.jpg",
             titulo: "Producto 2",
             descripcion: "Breve descripción del producto 2",
-            precio: 39.99,
+            precio: 39.90,
             infoExtra: "Información adicional del producto 2"
         },
         // Se pueden añadir más productos de ser necesario
