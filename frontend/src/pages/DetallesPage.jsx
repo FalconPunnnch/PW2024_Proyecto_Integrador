@@ -22,7 +22,7 @@ const DetallesPage = () => {
     };
 
     return (
-        <div className="container">
+        <div className="container mt-3">
             <div className="row">
                 <div className="col-4">
                     <img src="https://via.placeholder.com/400" alt={nombre} ></img>
