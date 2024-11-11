@@ -58,7 +58,7 @@ const DetallesPage = () => {
 
                         </div>
                         <div className="col-4">
-                            <button className="btn btn-primary w-100 p-2 mx-2" onClick={() => navigate('/compra')}>
+                            <button className="btn btn-primary w-100 p-2 mx-2" onClick={() => navigate('/')}>
                                 Agregar al Carrito
                             </button>
                         </div>

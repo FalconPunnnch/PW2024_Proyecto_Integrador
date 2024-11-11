@@ -4,15 +4,17 @@ import MainPage from './pages/MainPage';
 import RegistroPage from './pages/RegistroPage';
 import CompraPage from './pages/CompraPage';
 import DetallesPage from './pages/DetallesPage';
-import ProductoPage from './pages/ProductoPage';
+import CarritoPage from './pages/CarritoPage';
+import AdminPage from './pages/AdminPage';
 
 const router = createBrowserRouter([
-    { path : "/", element : <MainPage /> },
+    { path : "/", element : <MainPage/> },
     { path : "/login", element : <LoginPage /> },
     { path : "/registro", element : <RegistroPage /> },
-    { path : "/producto", element : <ProductoPage /> },
+    { path : "/carrito", element : <CarritoPage /> },
     { path : "/compra", element: <CompraPage /> },
-    { path : "/detalles", element: <DetallesPage /> }
+    { path : "/detalles", element: <DetallesPage /> },
+    { path : "/admin", element: <AdminPage /> }   
 
 ])
 
