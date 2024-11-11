@@ -1,5 +1,6 @@
 import { useState } from "react"
-import 'bootstrap/dist/css/bootstrap.min.css';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 const CompraPage = () => {
     const [nombre, setNombre] = useState("")
@@ -25,7 +26,10 @@ const CompraPage = () => {
     };
 
     return (
+        <>
+        <Header/>
         <div className="container">
+            
             <h1 className="mt-3"> DATOS DEL COMPRADOR</h1>
             <form>
                 <div className="input-group mb-3">
@@ -82,8 +86,10 @@ const CompraPage = () => {
                 <button type="button" class="btn btn-primary mb-3" onClick={handleGuardar}>Guardar</button>
 
             </form>
-
+            
         </div>
+        <Footer/>
+        </>
     )
 }
 export default CompraPage;

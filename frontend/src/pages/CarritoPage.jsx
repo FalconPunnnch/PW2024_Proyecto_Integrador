@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 const CarritoPage = () => {
       // Estado para la cantidad del producto
@@ -14,6 +15,8 @@ const CarritoPage = () => {
       };
 
       return (
+            <>
+            <Header/>
             <div className="container mt-5">
                   <h2 className="mb-4">Carrito de Compras</h2>
                   <div className="list-group">
@@ -67,6 +70,8 @@ const CarritoPage = () => {
                         <button className="btn btn-success">Proceder al Pago</button>
                   </div>
             </div>
+            <Footer/>
+            </>
       );
 };
 
