@@ -8,7 +8,7 @@ import ProductoPage from './pages/ProductoPage';
 
 const router = createBrowserRouter([
     { path : "/", element : <MainPage /> },
-    { path : "/login", element : <LoginPage/> },
+    { path : "/login", element : <LoginPage /> },
     { path : "/registro", element : <RegistroPage /> },
     { path : "/producto", element : <ProductoPage /> },
     { path : "/compra", element: <CompraPage /> },
