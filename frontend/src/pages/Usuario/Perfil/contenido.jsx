@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import styles from './perfiladmin.module.css';
+import { BASE_URL } from '../../../Api/constants';
 
 const Contenido = () => {
   const [opcionSeleccionada, setOpcionSeleccionada] = useState('DATOS PERSONALES');

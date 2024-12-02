@@ -92,7 +92,6 @@ const Header = () => {
                       <a href="/categoria/Coleccionables">Coleccionables</a>
                       <a href="/categoria/Juegos de Mesa">Juegos de Mesa</a>
                       <a href="/categoria/Juegos de Exterior">Juegos de Exterior</a>
-                      <a href="/categoria/Juguetes">Juguetes</a>
                       <a href="/categoria/Figuras de Acción">Figuras de Acción</a>
                     </div>
                   </div>

@@ -124,7 +124,7 @@ const create = async (req, res) => {
 const update = async (req, res) => {
     try {
         const { id } = req.params;
-        const { priceUSD, ...data } = req.body; 
+        const { pricePEN, ...data } = req.body; 
         const product = await ProductService.update(id, data);
         return res.status(200).json(product);
     } catch (error) {
