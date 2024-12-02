@@ -2,7 +2,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #ffd5c1;
+    background-color: #ffffff;
     margin: 0;
     padding: 0;
 }
@@ -17,7 +17,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
-    background-color: #fbe5d5;
+    background-color: #230B63;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -117,7 +117,7 @@ header {
 
 .main-nav .dropdown a {
     padding: 10px 20px;
-    color: black;
+    color: #ffffff;
     text-transform: none;
     font-size: 14px;
     font-family: 'Roboto', sans-serif;
@@ -196,7 +196,7 @@ header {
 .user-options a {
     margin-right: 20px;
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 13px;
     display: flex;
     align-items: center;
