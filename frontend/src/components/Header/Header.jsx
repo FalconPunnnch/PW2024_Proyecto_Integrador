@@ -54,7 +54,7 @@ const Header = () => {
           <a href="/">
             <img
               src="https://i1.sndcdn.com/avatars-000345690437-n939v3-t1080x1080.jpg"
-              alt="Impacto - Mayorista de Computo"
+              alt="Kingtana"
             />
           </a>
         </div>
@@ -116,7 +116,6 @@ const Header = () => {
                 </div>
               </li>
               <li><a href="#" className="rojo">Ofertas</a></li>
-              <li><a href="#">Supermercado</a></li>
             </ul>
           </nav>
         </div>
