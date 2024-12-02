@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useNavigate } from 'react-router-dom';
 import { faSearch, faUser, faUserPlus, faBox, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import './Header.css';
 
@@ -7,8 +8,15 @@ const Header = () => {
   const [cartCount, setCartCount] = useState(0);
   const [userRole, setUserRole] = useState(null); 
   const [isLoggedIn, setIsLoggedIn] = useState(false); 
-  const [showAccountDropdown, setShowAccountDropdown] = useState(false); 
+  const [showAccountDropdown, setShowAccountDropdown] = useState(false);
+  const [searchTerm, setSearchTerm] = useState('');
 
+  const handleSearch = () => {
+    if (searchTerm.trim()) {
+      window.location.href = `/search?query=${searchTerm}`;
+    }
+  };
+  
   useEffect(() => {
     const storedCount = localStorage.getItem('cartCount');
     setCartCount(storedCount ? parseInt(storedCount) : 0);
@@ -61,10 +69,16 @@ const Header = () => {
 
         <div className="search-and-nav">
           <div className="search-bar">
-            <input type="text" placeholder="Buscar productos..." />
-            <button className="search-button">
-              <FontAwesomeIcon icon={faSearch} />
-            </button>
+          <input type="text" placeholder="Buscar productos..." value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} onKeyDown={(e) => {
+              if (e.key === "Enter") {
+              handleSearch();
+              }
+            }} 
+          />
+
+          <button className="search-button" onClick={handleSearch}>
+          <FontAwesomeIcon icon={faSearch} />
+          </button>
           </div>
           <nav className="main-nav">
             <ul>
