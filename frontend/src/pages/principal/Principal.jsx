@@ -15,10 +15,10 @@ const Principal = () => {
               <img src='https://wongio.vtexassets.com/assets/vtex.file-manager-graphql/images/9874659c-f6a4-4fd5-8c86-80ed372cfed1___272085a515976384294495e8a7281530.jpg' className="d-block w-100" alt="Descripción de la imagen"/>
             </div>
             <div className="carousel-item">
-              <img src='https://wowslider.com/sliders/demo-80/data1/images/plumage176723_1920.jpg' className="d-block w-100" alt="Segunda imagen"/>
+              <img src='https://wongio.vtexassets.com/assets/vtex.file-manager-graphql/images/9782f240-51dd-468e-9319-34d24ec13d2c___d1604cd269426a0554562adcb80899d0.png' className="d-block w-100" alt="Segunda imagen"/>
             </div>
             <div className="carousel-item">
-              <img src='https://wowslider.com/sliders/demo-80/data1/images/nature497978_1920.jpg' className="d-block w-100" alt="tercera imagen"/>
+              <img src='https://wongio.vtexassets.com/assets/vtex.file-manager-graphql/images/817d7735-13ac-4347-80e3-7f26c1efc65e___cf2ccf7d0ed492674bcffd848298e7d8.jpg' className="d-block w-100" alt="tercera imagen"/>
             </div>
           </div>
           <button className="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
