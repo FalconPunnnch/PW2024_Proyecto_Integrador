@@ -44,3 +44,9 @@
   height: 570px;       
   object-fit: contain;    
 }
+
+.container {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
