@@ -7,6 +7,19 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
+// Const de catergorías
+const categories = [
+  { title: "Bebidas", image: "https://productosdelimpiezalima.com/image/catalog/categorias/bebidas.jpg", link: "/ProductList" },
+  { title: "Frutas y Verduras", image: "https://productosdeldia.com/cdn/shop/articles/Tips_para_saber_como_elegir_frutas_y_verduras.jpg?v=1672343945", link: "/ProductList" },
+  { title: "Cuidado del Hogar", image: "https://www.cien.adexperu.org.pe/wp-content/uploads/2023/10/productos-limpieza-basicos-1-800x445.jpg", link: "/ProductList" },
+  { title: "Lácteos y huevos", image: "https://imagenes.eltiempo.com/files/image_1200_600/uploads/2024/01/11/65a03ac54c17f.png", link: "/ProductList" },
+  { title: "Panadería", image: "https://thefoodtech.com/wp-content/uploads/2023/10/PANADERIA-PRINCIPAL-1-828x548.jpg", link: "/ProductList" },
+  { title: "Despensa", image: "https://despensasqueretanas.com/wp-content/uploads/2019/02/whatsapp-image-2024-06-03-at-11.25.00-am-600x429.jpeg", link: "/ProductList" },
+  { title: "Congelados", image: "https://elcarnicero.cl/media/catalog/category/BANNERCONGELADOS.jpg", link: "/ProductList" },
+  { title: "Carnes y chorizos", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo0cnBsHQvcksG9vg3sr3AF_SOk4VVYD6DDg&s", link: "/ProductList" },
+];
+
+
 const Principal = () => {
   return (
     <div className="App">
@@ -33,6 +46,28 @@ const Principal = () => {
           </button>
         </div>
       </section>
+
+      <div className="container my-4">
+        <div className="d-flex flex-nowrap justify-content-start gap-3 overflow-auto">
+          {categories.map((category, index) => (
+            <a href={category.link} className="text-decoration-none" key={index}>
+              <div className="card text-center" style={{ width: '100px', padding: '0.5rem' }}>
+                <img
+                  src={category.image}
+                  alt={category.title}
+                  style={{ height: '60px', objectFit: 'contain' }}
+                />
+                <div className="card-body p-1">
+                  <h6 className="card-title text-dark" style={{ fontSize: '0.65rem', lineHeight: '1.1' }}>
+                    {category.title}
+                  </h6>
+                </div>
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+
       <div className="product-container">
         <div className="product-header">
           <h2 className="product-title">Nuevos Productos</h2>
@@ -42,6 +77,7 @@ const Principal = () => {
         <div>
           <h1 style={{ marginBottom: '1rem' }}>Ofertas Navideñas</h1>
         </div>
+
         <div className='container my-4'>
           <div className="col-md-4">
             <Card style={{ width: '18rem' }}>
@@ -55,39 +91,45 @@ const Principal = () => {
                   <del style={{ color: 'gray' }}>S/ 59.90</del>{' '}
                   <span style={{ color: 'red', fontWeight: 'bold' }}>S/ 44.90</span>
                 </p>
-                <Button variant="primary">Detalles</Button>
+                <Link to="/detalles">
+                  <Button variant="primary">Detalles</Button>
+                </Link>
               </Card.Body>
             </Card>
           </div>
           <div className="col-md-4">
             <Card style={{ width: '18rem' }}>
-              <Card.Img variant="top" src="https://imagedelivery.net/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/40862069_1/w=1500,h=1500,fit=pad" />
+              <Card.Img variant="top" src="https://imagedelivery.net/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/40343329_1/w=1500,h=1500,fit=pad" />
               <Card.Body>
-                <Card.Title>Olla Acero Inoxidable 24 Cm</Card.Title>
+                <Card.Title>Juego de Ollas Acero Inoxidable 7 Piezas 14-16-24cm</Card.Title>
                 <Card.Text>
-                  OLLA 24CM ACERO INOXIDABLE PU. Vidrio templado
+                La marca Casa Joven ofrece un juego de ollas de acero inoxidable de 7 piezas con medidas de 14, 16 y 24 cm. 
                 </Card.Text>
                 <p>
-                  <del style={{ color: 'gray' }}>S/ 59.90</del>{' '}
-                  <span style={{ color: 'red', fontWeight: 'bold' }}>S/ 44.90</span>
+                  <del style={{ color: 'gray' }}>S/ 89.90</del>{' '}
+                  <span style={{ color: 'red', fontWeight: 'bold' }}>S/ 69.90</span>
                 </p>
-                <Button variant="primary">Detalles</Button>
+                <Link to="/detalles">
+                  <Button variant="primary">Detalles</Button>
+                </Link>
               </Card.Body>
             </Card>
           </div>
           <div className="col-md-4">
             <Card style={{ width: '18rem' }}>
-              <Card.Img variant="top" src="https://imagedelivery.net/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/40862069_1/w=1500,h=1500,fit=pad" />
+              <Card.Img variant="top" src="https://imagedelivery.net/4fYuQyy-r8_rpBpcY7lH_A/sodimacPE/1696165_01/w=1500,h=1500,fit=pad  " />
               <Card.Body>
-                <Card.Title>Olla Acero Inoxidable 24 Cm</Card.Title>
+                <Card.Title>Olla 16 cm Realwin Acero Transparente</Card.Title>
                 <Card.Text>
-                  OLLA 24CM ACERO INOXIDABLE PU. Vidrio templado
+                Olla de acero inoxidable con tapa de vidrio templado con respiradero y asas de metal
                 </Card.Text>
                 <p>
-                  <del style={{ color: 'gray' }}>S/ 59.90</del>{' '}
-                  <span style={{ color: 'red', fontWeight: 'bold' }}>S/ 44.90</span>
+                  <del style={{ color: 'gray' }}>S/ 49.90</del>{' '}
+                  <span style={{ color: 'red', fontWeight: 'bold' }}>S/ 39.90</span>
                 </p>
-                <Button variant="primary">Detalles</Button>
+                <Link to="/detalles">
+                  <Button variant="primary">Detalles</Button>
+                </Link>
               </Card.Body>
             </Card>
           </div>

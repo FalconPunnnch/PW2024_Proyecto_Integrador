@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 
+
 const DetallesPage = () => {
     const [nombre, setNombre] = useState("Producto");
     const [precio, setPrecio] = useState(100);
@@ -25,10 +26,10 @@ const DetallesPage = () => {
         <>
         <div className="container mt-3 mb-5">
             <div className="row">
-                <div className="col-4">
-                    <img src="https://via.placeholder.com/400" alt={nombre} ></img>
+                <div className="col-md-4">
+                    <img src="https://via.placeholder.com/400" alt={nombre}  className="img-fluid" ></img>
                 </div>
-                <div className="col-8">
+                <div className="col-md-8">
                     <h2>{nombre}</h2>
                     <p>Precio: ${precio}</p>
                     <p>{descripcion}</p>
