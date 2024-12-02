@@ -9,14 +9,14 @@ import Card from 'react-bootstrap/Card';
 
 // Const de catergorías
 const categories = [
-  { title: "Bebidas", image: "https://productosdelimpiezalima.com/image/catalog/categorias/bebidas.jpg", link: "/ProductList" },
-  { title: "Frutas y Verduras", image: "https://productosdeldia.com/cdn/shop/articles/Tips_para_saber_como_elegir_frutas_y_verduras.jpg?v=1672343945", link: "/ProductList" },
-  { title: "Cuidado del Hogar", image: "https://www.cien.adexperu.org.pe/wp-content/uploads/2023/10/productos-limpieza-basicos-1-800x445.jpg", link: "/ProductList" },
-  { title: "Lácteos y huevos", image: "https://imagenes.eltiempo.com/files/image_1200_600/uploads/2024/01/11/65a03ac54c17f.png", link: "/ProductList" },
-  { title: "Panadería", image: "https://thefoodtech.com/wp-content/uploads/2023/10/PANADERIA-PRINCIPAL-1-828x548.jpg", link: "/ProductList" },
-  { title: "Despensa", image: "https://despensasqueretanas.com/wp-content/uploads/2019/02/whatsapp-image-2024-06-03-at-11.25.00-am-600x429.jpeg", link: "/ProductList" },
-  { title: "Congelados", image: "https://elcarnicero.cl/media/catalog/category/BANNERCONGELADOS.jpg", link: "/ProductList" },
-  { title: "Carnes y chorizos", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo0cnBsHQvcksG9vg3sr3AF_SOk4VVYD6DDg&s", link: "/ProductList" },
+  { title: "Juguetes", image: "https://www.psicohuma.com/blog/wp-content/uploads/2017/03/juguetes2.jpg", link: "/ProductList" },
+  { title: "Coleccionables", image: "https://unaluka.com/cdn/shop/files/resizedImg_1000x1000_0_147f0f57-c2f8-43f1-850e-4ca315016e64_2048x.jpg?v=1727708247", link: "/ProductList" },
+  { title: "Televisores", image: "https://i.blogs.es/d542e0/samsung-55s85d/450_1000.jpg", link: "/ProductList" },
+  { title: "Zona Gamer", image: "https://peru.unir.net/wp-content/uploads/sites/2/2017/12/videojuegos_1920x1080.jpg", link: "/ProductList" },
+  { title: "Bicicletas", image: "https://www.jafibike.com.pe/wp-content/uploads/SAVA-200-gris-verde.jpg", link: "/ProductList" },
+  { title: "Camping", image: "https://www.ubuy.pe/productimg/?image=aHR0cHM6Ly9tLm1lZGlhLWFtYXpvbi5jb20vaW1hZ2VzL0kvNzFkM0RZUFJ5VEwuX0FDX1NMMTUwMF8uanBn.jpg", link: "/ProductList" },
+  { title: "Chocolates", image: "https://revista-lagunas.s3.us-east-2.amazonaws.com/2023/09/967-los-mejores-chocolates-del-mundo-de-donde-vienen-165-big.jpg", link: "/ProductList" },
+  { title: "Tortas", image: "https://res.cloudinary.com/riqra/image/upload/v1709402466/sellers/tortas-gaby/products/iu8vpga3dtp2u0r1lohl.png", link: "/ProductList" },
 ];
 
 
@@ -78,60 +78,64 @@ const Principal = () => {
           <h1 style={{ marginBottom: '1rem' }}>Ofertas Navideñas</h1>
         </div>
 
-        <div className='container my-4'>
-          <div className="col-md-4">
-            <Card style={{ width: '18rem' }}>
-              <Card.Img variant="top" src="https://imagedelivery.net/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/40862069_1/w=1500,h=1500,fit=pad" />
-              <Card.Body>
-                <Card.Title>Olla Acero Inoxidable 24 Cm</Card.Title>
-                <Card.Text>
-                  OLLA 24CM ACERO INOXIDABLE PU. Vidrio templado
-                </Card.Text>
-                <p>
-                  <del style={{ color: 'gray' }}>S/ 59.90</del>{' '}
-                  <span style={{ color: 'red', fontWeight: 'bold' }}>S/ 44.90</span>
-                </p>
-                <Link to="/detalles">
-                  <Button variant="primary">Detalles</Button>
-                </Link>
-              </Card.Body>
-            </Card>
-          </div>
-          <div className="col-md-4">
-            <Card style={{ width: '18rem' }}>
-              <Card.Img variant="top" src="https://imagedelivery.net/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/40343329_1/w=1500,h=1500,fit=pad" />
-              <Card.Body>
-                <Card.Title>Juego de Ollas Acero Inoxidable 7 Piezas 14-16-24cm</Card.Title>
-                <Card.Text>
-                La marca Casa Joven ofrece un juego de ollas de acero inoxidable de 7 piezas con medidas de 14, 16 y 24 cm. 
-                </Card.Text>
-                <p>
-                  <del style={{ color: 'gray' }}>S/ 89.90</del>{' '}
-                  <span style={{ color: 'red', fontWeight: 'bold' }}>S/ 69.90</span>
-                </p>
-                <Link to="/detalles">
-                  <Button variant="primary">Detalles</Button>
-                </Link>
-              </Card.Body>
-            </Card>
-          </div>
-          <div className="col-md-4">
-            <Card style={{ width: '18rem' }}>
-              <Card.Img variant="top" src="https://imagedelivery.net/4fYuQyy-r8_rpBpcY7lH_A/sodimacPE/1696165_01/w=1500,h=1500,fit=pad  " />
-              <Card.Body>
-                <Card.Title>Olla 16 cm Realwin Acero Transparente</Card.Title>
-                <Card.Text>
-                Olla de acero inoxidable con tapa de vidrio templado con respiradero y asas de metal
-                </Card.Text>
-                <p>
-                  <del style={{ color: 'gray' }}>S/ 49.90</del>{' '}
-                  <span style={{ color: 'red', fontWeight: 'bold' }}>S/ 39.90</span>
-                </p>
-                <Link to="/detalles">
-                  <Button variant="primary">Detalles</Button>
-                </Link>
-              </Card.Body>
-            </Card>
+        <div className="container my-4">
+          <div className="row">
+            <div className="col-md-4 d-flex">
+              <Card className="h-100">
+                <Card.Img variant="top" src="https://imagedelivery.net/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/40862069_1/w=1500,h=1500,fit=pad" />
+                <Card.Body className="d-flex flex-column justify-content-between">
+                  <Card.Title>Olla Acero Inoxidable 24 Cm</Card.Title>
+                  <Card.Text>
+                    OLLA 24CM ACERO INOXIDABLE PU. Vidrio templado
+                  </Card.Text>
+                  <p>
+                    <del style={{ color: 'gray' }}>S/ 59.90</del>{' '}
+                    <span style={{ color: 'red', fontWeight: 'bold' }}>S/ 44.90</span>
+                  </p>
+                  <Link to="/detalles">
+                    <Button variant="primary" className="w-100">Detalles</Button>
+                  </Link>
+                </Card.Body>
+              </Card>
+            </div>
+
+            <div className="col-md-4 d-flex">
+              <Card className="h-100">
+                <Card.Img variant="top" src="https://imagedelivery.net/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/40343329_1/w=1500,h=1500,fit=pad" />
+                <Card.Body className="d-flex flex-column justify-content-between">
+                  <Card.Title>Juego de Ollas Acero Inoxidable 7 Piezas 14-16-24cm</Card.Title>
+                  <Card.Text>
+                    La marca Casa Joven ofrece un juego de ollas de acero inoxidable de 7 piezas con medidas de 14, 16 y 24 cm.
+                  </Card.Text>
+                  <p>
+                    <del style={{ color: 'gray' }}>S/ 89.90</del>{' '}
+                    <span style={{ color: 'red', fontWeight: 'bold' }}>S/ 69.90</span>
+                  </p>
+                  <Link to="/detalles">
+                    <Button variant="primary" className="w-100">Detalles</Button>
+                  </Link>
+                </Card.Body>
+              </Card>
+            </div>
+
+            <div className="col-md-4 d-flex">
+              <Card className="h-100">
+                <Card.Img variant="top" src="https://imagedelivery.net/4fYuQyy-r8_rpBpcY7lH_A/sodimacPE/1696165_01/w=1500,h=1500,fit=pad" />
+                <Card.Body className="d-flex flex-column justify-content-between">
+                  <Card.Title>Olla 16 cm Realwin Acero Transparente</Card.Title>
+                  <Card.Text>
+                    Olla de acero inoxidable con tapa de vidrio templado con respiradero y asas de metal
+                  </Card.Text>
+                  <p>
+                    <del style={{ color: 'gray' }}>S/ 49.90</del>{' '}
+                    <span style={{ color: 'red', fontWeight: 'bold' }}>S/ 39.90</span>
+                  </p>
+                  <Link to="/detalles">
+                    <Button variant="primary" className="w-100">Detalles</Button>
+                  </Link>
+                </Card.Body>
+              </Card>
+            </div>
           </div>
         </div>
       </div>

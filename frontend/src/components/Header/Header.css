@@ -165,6 +165,8 @@ header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 12px;
     z-index: 1000;
+    width: auto;
+    min-width: 180px;
 }
 
 .category-group:hover .subcategory-dropdown {
