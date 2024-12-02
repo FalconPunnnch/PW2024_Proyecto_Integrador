@@ -1,26 +1,22 @@
 import React, { useState } from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 
 const CarritoPage = () => {
-      // Estado para la cantidad del producto
       const [quantity, setQuantity] = useState(1);
 
-      // Función para cambiar la cantidad del producto
+
       const changeQuantity = (change) => {
             setQuantity((prevQuantity) => {
                   const newQuantity = prevQuantity + change;
-                  return newQuantity < 1 ? 1 : newQuantity; // No permitir menos de 1
+                  return newQuantity < 1 ? 1 : newQuantity; 
             });
       };
 
       return (
             <>
-            <Header/>
             <div className="container mt-5">
                   <h2 className="mb-4">Carrito de Compras</h2>
                   <div className="list-group">
-                        {/* Producto 1 */}
+
                         <div className="list-group-item d-flex align-items-start">
                               <img
                                     src="https://via.placeholder.com/100"
@@ -58,7 +54,6 @@ const CarritoPage = () => {
                         </div>
                   </div>
 
-                  {/* Resumen del Carrito */}
                   <div className="mt-5">
                         <h4>Resumen del Carrito</h4>
                         <ul className="list-group mb-3">
@@ -70,7 +65,6 @@ const CarritoPage = () => {
                         <button className="btn btn-success">Proceder al Pago</button>
                   </div>
             </div>
-            <Footer/>
             </>
       );
 };

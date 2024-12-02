@@ -1,6 +1,4 @@
 import { useState } from "react"
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 
 const CompraPage = () => {
     const [nombre, setNombre] = useState("")
@@ -27,7 +25,6 @@ const CompraPage = () => {
 
     return (
         <>
-        <Header/>
         <div className="container">
             
             <h1 className="mt-3"> DATOS DEL COMPRADOR</h1>
@@ -88,7 +85,6 @@ const CompraPage = () => {
             </form>
             
         </div>
-        <Footer/>
         </>
     )
 }

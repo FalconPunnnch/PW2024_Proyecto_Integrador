@@ -1,31 +1,25 @@
 import React, { useState } from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 
 const AdminPage = () => {
-      // Estados para los inputs
       const [nombreProducto, setNombreProducto] = useState('');
       const [id, setId] = useState('');
       const [descripcion, setDescripcion] = useState('');
       const [precio, setPrecio] = useState('0.00');
       const [file, setFile] = useState(null);
 
-      // Manejador para el archivo
       const handleFileChange = (e) => {
             setFile(e.target.files[0]);
       };
 
-      // Manejador para la acción del botón
       const handleButtonClick = (action) => {
             alert(`Botón ${action} presionado`);
       };
 
       return (
             <>
-                  <Header />
                   <h1>Administrar Productos</h1>
                   <section className="container mt-4">
-                        {/* Botones de acción */}
+
                         <div className="row align-items-start mb-4">
                               {['Buscar', 'Añadir', 'Quitar', 'Modificar'].map((action) => (
                                     <button
@@ -38,7 +32,7 @@ const AdminPage = () => {
                               ))}
                         </div>
 
-                        {/* Input para Nombre e ID */}
+
                         <div className="row align-items-start mb-4">
                               <div className="col-8">
                                     <div className="input-group mb-3">
@@ -66,7 +60,6 @@ const AdminPage = () => {
                               </div>
                         </div>
 
-                        {/* Textarea para Descripción */}
                         <div className="row align-items-start mb-4">
                               <div className="col-8">
                                     <div className="input-group">
@@ -81,7 +74,6 @@ const AdminPage = () => {
                               </div>
                         </div>
 
-                        {/* Input para Precio */}
                         <div className="row align-items-start mb-4">
                               <div className="col-8">
                                     <div className="input-group mb-3">
@@ -97,7 +89,6 @@ const AdminPage = () => {
                               </div>
                         </div>
 
-                        {/* Input para Archivo */}
                         <div className="row align-items-start mb-4">
                               <div className="col-8">
                                     <div className="input-group mb-3">
@@ -112,7 +103,6 @@ const AdminPage = () => {
                               </div>
                         </div>
                   </section>
-                  <Footer />
             </>
 
             

@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { Link } from "react-router-dom"
-import "../index.css" // Archivo CSS para la animación y estilos
+import "../index.css"
 
 const FlipCard = ({ imagen, titulo, descripcion, precio, infoExtra }) => {
     const [isFlipped, setIsFlipped] = useState(false);
@@ -12,7 +12,7 @@ const FlipCard = ({ imagen, titulo, descripcion, precio, infoExtra }) => {
     return (
         <div className={`flip-card ${isFlipped ? "flipped" : ""}`}>
             <div className="flip-card-inner">
-                {/* Parte frontal */}
+
                 <div className="flip-card-front" onClick={handleFlip}>
                     <img src={imagen} alt={titulo} className="card-image" />
                     <h3 className="card-title">
@@ -21,7 +21,7 @@ const FlipCard = ({ imagen, titulo, descripcion, precio, infoExtra }) => {
                     <p className="card-description">{descripcion}</p>
                     <div className="card-price">S/. {precio}</div>
                 </div>
-                {/* Parte de atrás */}
+
                 <div className="flip-card-back" onClick={handleFlip}>
                     <p className="extra-info">{infoExtra}</p>
                 </div>
