@@ -2,7 +2,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f8f9fa;
+    background-color: #ffd5c1;
     margin: 0;
     padding: 0;
 }
@@ -17,7 +17,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
-    background-color: #1d2740;
+    background-color: #fbe5d5;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -53,7 +53,7 @@ header {
 
 .search-button {
     padding: 0 10px;
-    background-color: #0039a1;
+    background-color: #0056b3;
     border: none;
     border-radius: 0 4px 4px 0;
     color: #fff;
@@ -94,7 +94,7 @@ header {
 
 .main-nav li a {
     text-decoration: none;
-    color: #ffffff;
+    color: black;
     padding: 8px 15px;
     font-weight: bold;
     font-size: 14px;
@@ -117,7 +117,7 @@ header {
 
 .main-nav .dropdown a {
     padding: 10px 20px;
-    color: #ffffff;
+    color: black;
     text-transform: none;
     font-size: 14px;
     font-family: 'Roboto', sans-serif;
@@ -196,7 +196,7 @@ header {
 .user-options a {
     margin-right: 20px;
     text-decoration: none;
-    color: #ffffff;
+    color: black;
     font-size: 13px;
     display: flex;
     align-items: center;

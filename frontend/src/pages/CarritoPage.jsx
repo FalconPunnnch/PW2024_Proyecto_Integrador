@@ -62,7 +62,7 @@ const CarritoPage = () => {
                                     <span>${(20.0 * quantity).toFixed(2)}</span>
                               </li>
                         </ul>
-                        <button className="btn btn-success">Proceder al Pago</button>
+                        <button className="btn btn-success  mb-5">Proceder al Pago</button>
                   </div>
             </div>
             </>
