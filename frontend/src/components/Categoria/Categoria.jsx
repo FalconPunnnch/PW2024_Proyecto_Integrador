@@ -76,20 +76,6 @@ const Categoria = () => {
           !loading && <p>No hay productos disponibles en esta categoría.</p>
         )}
       </div>
-      <div>
-        <h3>Carrito</h3>
-        {carrito.length > 0 ? (
-          <ul>
-            {carrito.map((item) => (
-              <li key={item.id}>
-                {item.name} - {item.quantity} x S/{item.pricePEN.toFixed(2)}
-              </li>
-            ))}
-          </ul>
-        ) : (
-          <p>El carrito está vacío.</p>
-        )}
-      </div>
     </div>
   );
 };
