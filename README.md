@@ -13,7 +13,7 @@
 6. Ver lista de productos filtrados por categoría.
 7. Ver detalle de producto
 
-### Proyecto en desarrollo, clase de L:7-10pm, X:8-10pm. Calificación: ?/20.
+### Proyecto presentado el 02/12/24, clase de L:7-10pm. Calificación: 13/20.
 
 ### Sobre los archivos:
 -  Frontend folder: Contiene los archivos necesarios para la parte visual de la web, con la cual el usuario interactúa directamente.
